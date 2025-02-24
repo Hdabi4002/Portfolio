@@ -57,14 +57,14 @@
   
   .grid-container1{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap:10px;
   }
 
  .grid-item1 {
     padding:0;
     padding:3px 5px;
-    grid-column:span 1 ;
+    justify-content:center;
   }
 
   .grid-item2 {
@@ -73,7 +73,6 @@
     font-size: larger;
     font-family: cursive;
     overflow-wrap: inherit;
-    grid-column: span 3;
   }
   .grid-container{
     background-color: pink;
